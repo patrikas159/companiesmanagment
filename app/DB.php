@@ -1,11 +1,10 @@
 <?php
 namespace CompanyApp;
 use PDO;
-//statinis su self, paprastas su this
 class DB {
     private static $connection='mysql:host=127.0.0.1';
     private static $user="root";
-    private static $password="54518s";
+    private static $password="";
     private static $database="company";
     private static $options=[
         PDO::ATTR_ERRMODE=>PDO::ERRMODE_WARNING

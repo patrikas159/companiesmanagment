@@ -4,7 +4,7 @@
     <h1 class="text-center mt-3">Company information</h1>
     <div class="company-info-box p-4 d-flex flex-column justify-content-between"">
     <div>
-        <p> Company name: <span class="font-weight-bold"><?= ucfirst(strtolower($_SESSION['data'][0]['company_name'])) ?></span></p>
+        <p>Company name: <span class="font-weight-bold"><?= ucfirst(strtolower($_SESSION['data'][0]['company_name'])) ?></span></p>
         <p>Company code: <span class="font-weight-bold"><?= $_SESSION['data'][0]['code'] ?></span></p>
         <p>Company vat code: <span class="font-weight-bold">LT-<?= $_SESSION['data'][0]['vat_code'] ?></span></p>
         <p>Company address: <span class="font-weight-bold"><?= $_SESSION['data'][0]['address'] ?></span></p>
@@ -18,7 +18,7 @@
             <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete">
                 Delete
             </button>
-            <a class="btn btn-warning" href="/company/companies/<?=$_SESSION['p']?>">Go to list</a>
+            <a class="btn btn-warning" href="/company/companies/">Back to list</a>
         </div>
 
         <div class="modal fade" id="delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

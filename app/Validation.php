@@ -14,11 +14,11 @@ class Validation {
         return self::$errors;
     }
     public static function validateName($name){
-        $validName=preg_match('/^[\w\d ,.]{1,100}$/',$name);
+        $validName=preg_match('/^[\w\d ,.]{1,255}$/',$name);
         if(empty($name)){
             Validation::$errors['name']="Input required";
         } else if(!$validName){
-            Validation::$errors['name']="Max name length 150";
+            Validation::$errors['name']="Max name length 255";
         } else {
             Validation::$errors['name']="";
         }

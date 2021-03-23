@@ -11,7 +11,6 @@ class Company{
     private $email="";
     private $activities="";
     private $manager="";
-    private $error="";
 
     public function __construct($pdo){
         $this->pdo=$pdo;
