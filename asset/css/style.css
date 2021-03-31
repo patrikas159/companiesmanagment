@@ -1,3 +1,7 @@
+body{
+    background: lightblue;
+
+}
 form {
     max-width: 560px;
     margin: auto;
@@ -8,9 +12,10 @@ form {
 }
 
 .company-info-box {
-    border-style: solid;
-    background: white;
     width: 450px;
-    height: 500px;
     margin: 40px auto;
+}
+.pagination{
+    margin-left: 450px;
+    
 }

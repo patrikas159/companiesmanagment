@@ -42,7 +42,7 @@ class Company{
         $stmt->bindValue(":vatCode",$vatCode,PDO::PARAM_STR);
         $stmt->execute();
         if($stmt->fetch()){
-            $this->error="Company already exist. Check company name, code or VAT code";
+            $this->error="Imone jau egzistuoja";
         } else{
             $this->error='';
         }
